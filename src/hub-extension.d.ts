@@ -16,7 +16,7 @@ export interface StatusResponse {
   statuses: {[id: string]: 'unknown' | 'online' | 'queued'},
 }
 
-export interface StatusResonseV2 {
+export interface StatusResponseV2 {
   statuses: {
     [id: string]: {
       status: 'unknown' | 'online' | 'queued' | 'trashed',
