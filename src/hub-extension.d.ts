@@ -15,7 +15,16 @@ export interface VideoDownloadRequest {
 export interface StatusResponse {
   statuses: {[id: string]: 'unknown' | 'online' | 'queued'},
 }
-  
+
+export interface StatusResonseV2 {
+  statuses: {
+    [id: string]: {
+      status: 'unknown' | 'online' | 'queued' | 'trashed',
+      username: string,
+    }
+  }
+}
+
 export interface StatusRequest {
   /** A list of video ids to check the status of */
   ids: string[],
