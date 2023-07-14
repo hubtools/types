@@ -11,15 +11,17 @@ export interface VideoDownloadRequest {
   modelProfilePicture?: string,
   modelUrl?: string,
 }
-  
+
+export type OnlineStatus = 'unknown' | 'online' | 'queued' | 'trashed';
+
 export interface StatusResponse {
-  statuses: {[id: string]: 'unknown' | 'online' | 'queued'},
+  statuses: {[id: string]: OnlineStatus},
 }
 
 export interface StatusResponseV2 {
   statuses: {
     [id: string]: {
-      status: 'unknown' | 'online' | 'queued' | 'trashed',
+      status: OnlineStatus,
       username: string,
     }
   }
