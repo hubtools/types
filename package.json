@@ -1,6 +1,6 @@
 {
   "name": "@hubtools/types",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Typescript declarations for types common to HubTools projects",
   "types": "src/index.d.ts",
   "scripts": {
